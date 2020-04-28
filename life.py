@@ -21,6 +21,10 @@ gameState = np.zeros((nxC,  nyC))
 dimCW = width / nxC
 dimCH = height / nyC
 
+# Oscilador.
+gameState[38, 20] = 1
+gameState[39, 20] = 1
+gameState[40, 20] = 1
 
 # Runner 1
 gameState[10,5] = 1
@@ -28,7 +32,6 @@ gameState[12,5] = 1
 gameState[11,6] = 1
 gameState[12,6] = 1
 gameState[11,7] = 1
-
 
 #Runner 2
 gameState[5,10] = 1
@@ -38,21 +41,18 @@ gameState[6,12] = 1
 gameState[7,11] = 1
 
 #Box 1
-
 gameState[18,15] = 1
 gameState[17,16] = 1
 gameState[17,15] = 1
 gameState[18,16] = 1
 
 #Serpent 1
-
 gameState[30,20] = 1
 gameState[31,20] = 1
 gameState[32,20] = 1
 gameState[32,19] = 1
 gameState[33,19] = 1
 gameState[34,19] = 1
-
 
 pauseExect = False
 
